@@ -19,5 +19,6 @@ PRODUCT_PACKAGES += \
     libgallium_dri \
     libgbm_mesa \
     dri_gbm \
-    vulkan.freedreno
+    vulkan.freedreno \
+    libhardware.vendor
 endif
