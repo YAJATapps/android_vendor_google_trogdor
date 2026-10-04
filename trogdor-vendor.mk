@@ -22,3 +22,8 @@ PRODUCT_PACKAGES += \
     vulkan.freedreno \
     libhardware.vendor
 endif
+
+# Adreno 630 GPU Firmware (early boot ramdisk)
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/vendor/firmware/qcom/a630_sqe.fw:$(TARGET_COPY_OUT_RAMDISK)/lib/firmware/qcom/a630_sqe.fw \
+    $(LOCAL_PATH)/proprietary/vendor/firmware/qcom/a630_gmu.bin:$(TARGET_COPY_OUT_RAMDISK)/lib/firmware/qcom/a630_gmu.bin
