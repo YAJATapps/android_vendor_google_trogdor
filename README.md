@@ -5,12 +5,23 @@ This repository contains prebuilt proprietary firmware blobs and graphics accele
 ---
 
 ## 1. Qualcomm Firmware Blobs
-- **Source**: Adreno 630 GPU firmware (as previously kept in `device/google/trogdor/firmware/`).
+- **Source**: [linux-firmware](https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git).
 - **Components**:
   - **Adreno GPU (early boot)**:
     - `proprietary/vendor/firmware/qcom/a630_sqe.fw` -> `/lib/firmware/qcom/a630_sqe.fw` (ramdisk)
     - `proprietary/vendor/firmware/qcom/a630_gmu.bin` -> `/lib/firmware/qcom/a630_gmu.bin` (ramdisk)
-- **Note**: Installed to the ramdisk only (`$(TARGET_COPY_OUT_RAMDISK)`), via `PRODUCT_COPY_FILES` in `trogdor-vendor.mk`.
+  - **Ath10k Wi-Fi (WCN3990)**:
+    - `proprietary/vendor/firmware/ath10k/WCN3990/hw1.0/board-2.bin`
+    - `proprietary/vendor/firmware/ath10k/WCN3990/hw1.0/firmware-5.bin`
+    - `proprietary/vendor/firmware/ath10k/WCN3990/hw1.0/wlanmdsp.mbn`
+    - Installed under `/vendor/firmware/ath10k/WCN3990/hw1.0/`.
+  - **Bluetooth (WCN3990)**:
+    - `proprietary/vendor/firmware/qca/crbtfw32.tlv`
+    - `proprietary/vendor/firmware/qca/crnv32u.bin`
+    - Installed under `/vendor/firmware/qca/`.
+  - **Venus video decoder**:
+    - `proprietary/vendor/firmware/qcom/venus-5.4/venus.mbn` -> `/vendor/firmware/qcom/venus-5.4/venus.mbn`
+- **Install paths**: GPU firmware is installed to the early-boot ramdisk (`$(TARGET_COPY_OUT_RAMDISK)`); Wi-Fi, Bluetooth, and Venus firmware are installed under `/vendor/firmware`.
 
 ---
 
