@@ -28,11 +28,14 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/vendor/firmware/qcom/a630_sqe.fw:$(TARGET_COPY_OUT_RAMDISK)/lib/firmware/qcom/a630_sqe.fw \
     $(LOCAL_PATH)/proprietary/vendor/firmware/qcom/a630_gmu.bin:$(TARGET_COPY_OUT_RAMDISK)/lib/firmware/qcom/a630_gmu.bin
 
-# Qualcomm SC7180 Wi-Fi, Bluetooth, and Venus firmware
+# Qualcomm SC7180 modem, Wi-Fi, Bluetooth, and Venus firmware
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/vendor/firmware/qcom/sc7180-trogdor/modem-nolte/mba.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/qcom/sc7180-trogdor/modem-nolte/mba.mbn \
+    $(LOCAL_PATH)/proprietary/vendor/firmware/qcom/sc7180-trogdor/modem-nolte/qdsp6sw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/qcom/sc7180-trogdor/modem-nolte/qdsp6sw.mbn \
     $(LOCAL_PATH)/proprietary/vendor/firmware/ath10k/WCN3990/hw1.0/board-2.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ath10k/WCN3990/hw1.0/board-2.bin \
     $(LOCAL_PATH)/proprietary/vendor/firmware/ath10k/WCN3990/hw1.0/firmware-5.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ath10k/WCN3990/hw1.0/firmware-5.bin \
     $(LOCAL_PATH)/proprietary/vendor/firmware/ath10k/WCN3990/hw1.0/wlanmdsp.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/ath10k/WCN3990/hw1.0/wlanmdsp.mbn \
     $(LOCAL_PATH)/proprietary/vendor/firmware/qca/crbtfw32.tlv:$(TARGET_COPY_OUT_VENDOR)/firmware/qca/crbtfw32.tlv \
+    $(LOCAL_PATH)/proprietary/vendor/firmware/qca/crnv32.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/qca/crnv32.bin \
     $(LOCAL_PATH)/proprietary/vendor/firmware/qca/crnv32u.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/qca/crnv32u.bin \
     $(LOCAL_PATH)/proprietary/vendor/firmware/qcom/venus-5.4/venus.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/qcom/venus-5.4/venus.mbn

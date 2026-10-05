@@ -17,15 +17,20 @@ This repository contains prebuilt proprietary firmware blobs and graphics accele
     - Installed under `/vendor/firmware/ath10k/WCN3990/hw1.0/`.
   - **Bluetooth (WCN3990)**:
     - `proprietary/vendor/firmware/qca/crbtfw32.tlv`
+    - `proprietary/vendor/firmware/qca/crnv32.bin`
     - `proprietary/vendor/firmware/qca/crnv32u.bin`
     - Installed under `/vendor/firmware/qca/`.
   - **Venus video decoder**:
     - `proprietary/vendor/firmware/qcom/venus-5.4/venus.mbn` -> `/vendor/firmware/qcom/venus-5.4/venus.mbn`
 - **Install paths**: GPU firmware is installed to the early-boot ramdisk (`$(TARGET_COPY_OUT_RAMDISK)`); Wi-Fi, Bluetooth, and Venus firmware are installed under `/vendor/firmware`.
 
----
+## 2. Modem Firmware
+- **Source**: postmarketOS.
+- **Files**:
+  - `proprietary/vendor/firmware/qcom/sc7180-trogdor/modem-nolte/mba.mbn`
+  - `proprietary/vendor/firmware/qcom/sc7180-trogdor/modem-nolte/qdsp6sw.mbn`
 
-## 2. Mesa3D Freedreno / Turnip (Adreno) Graphics Acceleration Prebuilts
+## 3. Mesa3D Freedreno / Turnip (Adreno) Graphics Acceleration Prebuilts
 - **Version**: Mesa 26.2.2 (Release)
 - **Source**: Built out-of-tree for Android (aarch64, NDK).
 - **Build**: Only included when `TARGET_BUILD_MESA := true`.
