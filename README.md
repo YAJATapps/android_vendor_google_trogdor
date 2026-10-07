@@ -32,7 +32,7 @@ This repository contains prebuilt proprietary firmware blobs and graphics accele
 
 ## 3. Mesa3D Freedreno / Turnip (Adreno) Graphics Acceleration Prebuilts
 - **Version**: Mesa 26.2.2 (Release)
-- **Source**: Built out-of-tree for Android (aarch64, NDK).
+- **Source**: Built out-of-tree for Android (aarch64, NDK) using the [Mesa build script](https://gist.github.com/YAJATapps/5589c3c4d32e02cd6c34dcdb9501aacc).
 - **Build**: Only included when `TARGET_BUILD_MESA := true`.
 - **Components**:
   - `libgallium_dri.so`: Gallium Freedreno driver (`/vendor/lib64/libgallium_dri.so`)
