@@ -1,6 +1,6 @@
 # Proprietary Vendor Blobs for Qualcomm SC7180 (Google Trogdor)
 
-This repository contains prebuilt proprietary firmware blobs and graphics acceleration libraries required for LineageOS 23.2 on Qualcomm SC7180 (Google Trogdor / `trogdor`) devices.
+This repository contains prebuilt proprietary firmware blobs and Mesa 26.2.4 graphics acceleration libraries required for LineageOS 24 on Qualcomm SC7180 (Google Trogdor / `trogdor`) devices.
 
 ---
 
