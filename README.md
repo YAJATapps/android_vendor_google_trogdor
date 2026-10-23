@@ -1,6 +1,6 @@
 # Proprietary Vendor Blobs for Qualcomm SC7180 (Google Trogdor)
 
-This repository contains prebuilt proprietary firmware blobs and Mesa 26.2.4 graphics acceleration libraries required for LineageOS 24 on Qualcomm SC7180 (Google Trogdor / `trogdor`) devices.
+This repository contains prebuilt proprietary firmware blobs and graphics acceleration libraries required for LineageOS 24 on Qualcomm SC7180 (Google Trogdor / `trogdor`) devices.
 
 ---
 
@@ -31,7 +31,7 @@ This repository contains prebuilt proprietary firmware blobs and Mesa 26.2.4 gra
   - `proprietary/vendor/firmware/qcom/sc7180-trogdor/modem-nolte/qdsp6sw.mbn`
 
 ## 3. Mesa3D Freedreno / Turnip (Adreno) Graphics Acceleration Prebuilts
-- **Version**: Mesa 26.2.2 (Release)
+- **Version**: Mesa 26.2.4 (Release)
 - **Source**: Built out-of-tree for Android (aarch64, NDK) using the [Mesa build script](https://gist.github.com/YAJATapps/5589c3c4d32e02cd6c34dcdb9501aacc).
 - **Build**: Only included when `TARGET_BUILD_MESA := true`.
 - **Components**:
